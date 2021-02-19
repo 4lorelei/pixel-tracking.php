@@ -14,6 +14,6 @@ $dd=date("d/m/Y H:i:s");
 $log[$ip . "-" .$referer . "-" . $useragent . "-" . $browser . "-" .$dd]="";
 	
 $myLogJson = json_encode($log);
-file_put_contents("traccia.log", $myLogJson, LOCK_EX);
+file_put_contents("traccia.txt", $myLogJson, LOCK_EX);
 
 ?>
