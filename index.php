@@ -1,7 +1,5 @@
 <?php
-
-  print ("Hello");
-  
+ 
   // Create an image, 1x1 pixel in size
   $im=imagecreate(1,1);
 
