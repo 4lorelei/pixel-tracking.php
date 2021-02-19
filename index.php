@@ -39,4 +39,6 @@ ob_flush();
 flush();
 ob_end_flush()
 
+print("Hello");
+
 ?>
