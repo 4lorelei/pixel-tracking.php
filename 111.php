@@ -17,11 +17,7 @@ $useragent = $_SERVER['HTTP_USER_AGENT'];
 $browser = get_browser(null, true);
 
 $log = file_get_contents("traccia.txt");
-#$log = json_decode($myLogJson,true);
 $dd=date("d/m/Y H:i:s");
 $log =  $log . "\n" . $ip . "-" .$referer . "-" . $useragent . "-" . $browser . "-" . $dd;
 	
-#$myLogJson = json_encode($log);
 file_put_contents("traccia.txt", $log, LOCK_EX);
-
-
