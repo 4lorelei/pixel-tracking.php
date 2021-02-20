@@ -12,13 +12,12 @@ $referer = $_SERVER['HTTP_REFERER'];
 $useragent = $_SERVER['HTTP_USER_AGENT'];
 $browser = get_browser(null, true);
 
-$myLogJson = file_get_contents("traccia.txt");
+$log = file_get_contents("traccia.txt");
 #$log = json_decode($myLogJson,true);
 $dd=date("d/m/Y H:i:s");
 $log = $log . "\n" . $ip . "-" .$referer . "-" . $useragent . "-" . $browser . "-" .$dd;
 	
-$myLogJson = $log;
 #$myLogJson = json_encode($log);
-file_put_contents("traccia.txt", $myLogJson, LOCK_EX);
+file_put_contents("traccia.txt", $log, LOCK_EX);
 
 ?>
