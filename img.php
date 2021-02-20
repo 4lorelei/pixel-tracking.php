@@ -1,7 +1,7 @@
 <?php
 header("Content-type: image/jpeg");
 
-$origfile="./frog.JPG";
+$origfile="./frog.JPG"; 
 $fd = fopen ($origfile, "rb");
 $contents = fread ($fd, filesize ($origfile));
 fclose ($fd);
