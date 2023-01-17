@@ -18,9 +18,3 @@ $dd=date("d/m/Y H:i:s");
 $log =  $log . "\n" . $ip . "-" .$referer . "-" . $useragent . "-" . $browser . "-" . $request_uri . "-" . $dd;
 	
 file_put_contents("traccia.txt", $log, LOCK_EX);
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
